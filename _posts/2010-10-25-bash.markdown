@@ -6,13 +6,13 @@ title: laboratorium3
 <p class="author">---Menu---</p>
 
 
-<br/>
+</br>
 </blockquote>
 
 <h1>Laboratorium 3</h1>
 
 
-<ul class="posts">
+<ul class="posts"> 
 <li>
 <p>1. Wyświetl plik <i>/etc/passwd</i> z podziałem na strony przyjmując, że
 strona na 5 linii tekstu.
@@ -30,7 +30,7 @@ podanego ze standardowego wejścia (klawiatury) i pliku <i>tekst2.txt</i>.
 <br/>
 <div class="transbox">
 cat > tekst1.txt<br/>
-costamcostam<br/>
+pliczek1<br/>
 cat > tekst2.txt<br/>
 123456<br/>
 cat text1.txt > text3.txt<br/>
