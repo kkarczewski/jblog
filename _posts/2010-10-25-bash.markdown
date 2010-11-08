@@ -1,0 +1,110 @@
+---
+layout: post
+title: laboratorium3
+---
+<blockquote>
+<p class="author">---Menu---</p>
+
+
+<br/>
+</blockquote>
+
+<h1>Laboratorium 3</h1>
+
+
+<ul class="posts">
+<li>
+<p>1. Wyświetl plik <i>/etc/passwd</i> z podziałem na strony przyjmując, że
+strona na 5 linii tekstu.
+<br/>
+<div class="transbox">
+more -5 etc/passwd
+</div>
+</p>
+<br/>
+
+<p>2. Korzystając z polecenia <i>cat</i> utwórz plik <i>tekst3.txt</i>, który
+będzie składał się z zawartości pliku <i>tekst1.txt</i>, ciągu znaków
+podanego ze standardowego wejścia (klawiatury) i pliku <i>tekst2.txt</i>.
+
+<br/>
+<div class="transbox">
+cat > tekst1.txt<br/>
+costamcostam<br/>
+cat > tekst2.txt<br/>
+123456<br/>
+cat text1.txt > text3.txt<br/>
+cat text2.txt >> text3.txt<br/>
+</div>
+</p>
+<br/>
+
+
+<p>3. Wyświetl po 5 pierwszych linii wszystkich plików w swoim katalogu
+domowym w taki sposób, aby nie były wyświetlane ich nazwy.
+<br/>
+<div class="transbox">
+head -q -n 5 *
+</div>
+</p>
+<br/>
+
+
+<p>4. Wyświetl linie o numerach 3, 4 i 5 z pliku <i>/etc/passwd</i>.
+<br/>
+<div class="transbox">
+head -n 5 etc/passwd | tail -n 3
+
+</div>
+</p>
+<br/>
+
+
+<p>5. Wyświetl linie o numerach 7, 6 i 5 od końca pliku <i>/etc/passwd</i>.
+<br/>
+<div class="transbox">
+tail -n 7 etc/passwd | head -n 3
+</div>
+</p>
+<br/>
+
+
+<p>6. Wyświetl zawartość pliku <i>/etc/passwd</i> w jednej linii.
+
+<br/>
+<div class="transbox">
+cat etc/passwd | tr -d "\n"
+</div>
+</p>
+<br/>
+
+
+<p>7. Za pomocą filtru <i>tr</i> wykonaj modyfikację pliku <i>plik.txt</i>,
+polegającą na umieszczeniu każdego słowa w osobnej linii.
+<div class="transbox">
+tr " " "\n" < tekst1.txt
+
+</div>
+</p>
+<br/>
+
+
+<p>8. Zlicz wszystkie pliki znajdujące się w katalogu <i>/etc</i> i jego
+podkatalogach.
+<div class="transbox">
+ls -aA /etc | wc -l
+</div>
+</p>
+<br/>
+
+
+<p>9. Napisać polecenie zliczające ilość znaków z pierwszych trzech
+linii pliku <i>/etc/passwd</i>.
+
+<div class="transbox">
+head -n 3 /etc/passwd | wc -c
+</div>
+</p>
+<br/>
+</li>
+</ul>
